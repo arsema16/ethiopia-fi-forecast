@@ -6,7 +6,6 @@ __pycache__/
 .Python
 
 # Distribution / packaging
-.Python
 env/
 venv/
 ENV/
@@ -14,20 +13,23 @@ ENV/
 .idea/
 .vscode/
 
-# Jupyter Notebooks
+# Jupyter Notebooks - ONLY ignore checkpoint files
 .ipynb_checkpoints/
-*.ipynb
+*.ipynb_checkpoints
 
-# Data files
+# Data files - EXCLUDE processed data
 *.csv
 *.xlsx
 *.xls
+!data/processed/*.csv
 
 # Logs and databases
 *.log
 *.sqlite
-data/processed/
 
 # OS files
 .DS_Store
 Thumbs.db
+
+# Environment variables
+.env
